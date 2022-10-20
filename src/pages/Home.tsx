@@ -9,8 +9,8 @@ const Home = () => {
       <div className="md:px-[114px] px-[16px]">
         <NavBar />
         <MainSection />
+        <Footer />
       </div>
-      {/* <Footer /> */}
     </div>
   );
 };

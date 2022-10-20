@@ -6,7 +6,7 @@ import GitHubIcon from "../assets/GitHubIcon.svg";
 
 const SocialLinks = () => {
   return (
-    <div className="flex justify-center space-x-[36.75px] mb-[177.1px]">
+    <div className="flex justify-center space-x-[36.75px] mb-[136.55px]">
       <img src={SlackIcon} alt="slack" title="edemaero" id="slack" />
 
       <a href="https://github.com/Beyond-Logic" id="github">
