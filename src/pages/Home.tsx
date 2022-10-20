@@ -6,8 +6,10 @@ import { Footer, MainSection, NavBar } from "../components";
 const Home = () => {
   return (
     <div>
-      <NavBar />
-      <MainSection />
+      <div className="md:px-[114px] px-[20px]">
+        <NavBar />
+        <MainSection />
+      </div>
       <Footer />
     </div>
   );
