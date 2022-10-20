@@ -1,7 +1,7 @@
 /** @format */
 
 import React from "react";
-import ProfilePhoto from "../assets/ProfilePicture.svg";
+import ProfilePhoto from "../assets/EdemaEro.jpg";
 import ShareIcon from "../assets/ShareIcon.svg";
 import MenuIcon from "../assets/MenuIcon.svg";
 
@@ -9,12 +9,17 @@ const ProfileCard = () => {
   return (
     <div className="relative lg:w-[65%] md:w-[70%] m-auto">
       <div className="flex flex-col justify-center items-center">
-        <img src={ProfilePhoto} id="profile__img" alt="profile__img" />
+        <img
+          src={ProfilePhoto}
+          id="profile__img"
+          alt="profile__img"
+          className="w-[88px] h-[88px] rounded-full"
+        />
         <h5
           id="twitter"
           className="mt-[24px] font-bold md:text-[20px] text-[18px] md:leading-[30px] leading-[28px] text-[#101828] text-center"
         >
-          Annette Black
+          Edema Ero
         </h5>
       </div>
       <div className="absolute right-0 top-0">
