@@ -8,9 +8,9 @@ const Home = () => {
     <div>
       <div className="md:px-[114px] px-[20px]">
         <NavBar />
-        <MainSection />
+        {/* <MainSection /> */}
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
