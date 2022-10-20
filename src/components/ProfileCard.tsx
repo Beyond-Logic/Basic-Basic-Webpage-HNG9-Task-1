@@ -7,7 +7,7 @@ import MenuIcon from "../assets/MenuIcon.svg";
 
 const ProfileCard = () => {
   return (
-    <div className="relative lg:w-[60%] md:w-[70%] m-auto">
+    <div className="relative lg:w-[65%] md:w-[70%] m-auto">
       <div className="flex flex-col justify-center items-center">
         <img src={ProfilePhoto} id="profile__img" alt="profile__img" />
         <h5
