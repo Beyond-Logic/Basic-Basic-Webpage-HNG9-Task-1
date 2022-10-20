@@ -1,7 +1,7 @@
 /** @format */
 
 import React from "react";
-import { LinkCard } from "./index";
+import { LinkCard, SocialLinks } from "./index";
 
 const Links = [
   {
@@ -44,6 +44,7 @@ const Links = [
     link: "https://books.zuri.team/design-rules",
     id: "book__design",
     subtext: "Don't let little mistakes cost you a chance",
+    fontWeight: true,
   },
 ];
 
@@ -62,6 +63,7 @@ const MainSection = () => {
             />
           ))}
       </div>
+      <SocialLinks />
     </div>
   );
 };
