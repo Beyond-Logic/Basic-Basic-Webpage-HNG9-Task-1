@@ -1,16 +1,22 @@
 /** @format */
 
 import React, { useState } from "react";
-import ProfilePhoto from "../assets/EdemaEro.jpg";
+import ProfilePhoto from "../assets/EdemaEroPicture.jpg";
 import MenuIcon from "../assets/MenuIcon";
 import ShareIcon from "../assets/ShareIcon";
 import CameraIcon from "../assets/CameraIcon.svg";
+import ReactTooltip from "react-tooltip";
+
 const ProfileCard = () => {
   const [isShown, setIsShown] = useState(false);
   const [showCamera, setShowCamera] = useState(false);
 
   return (
     <div className="relative lg:w-[65%] md:w-[70%] m-auto">
+      <ReactTooltip id="shareProfileTip" place="left" effect="solid">
+        Share Profile
+      </ReactTooltip>
+
       <div className="flex flex-col justify-center items-center">
         <div className="relative">
           <img
@@ -41,6 +47,8 @@ const ProfileCard = () => {
         <div
           onMouseEnter={() => setIsShown(true)}
           onMouseLeave={() => setIsShown(false)}
+          data-tip
+          data-for="shareProfileTip"
         >
           <ShareIcon
             className="-mt-6 hidden md:flex cursor-pointer"

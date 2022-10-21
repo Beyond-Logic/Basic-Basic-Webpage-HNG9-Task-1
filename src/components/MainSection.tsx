@@ -2,6 +2,7 @@
 
 import React from "react";
 import { LinkCard, SocialLinks } from "./index";
+import { v4 as uuidv4 } from "uuid";
 
 const Links = [
   {
@@ -26,7 +27,7 @@ const Links = [
 
   {
     title: "Python Books",
-    link: "https://books.zuri.team/python-for-beginners?ref_id=<yourslackname>",
+    link: `https://books.zuri.team/python-for-beginners?${uuidv4()}=edemaero`,
     id: "book__python",
     fontWeight: true,
   },
