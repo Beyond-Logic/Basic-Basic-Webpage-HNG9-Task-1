@@ -14,7 +14,7 @@ const LinkCard = ({ title, link, id, fontweight }: linkCardProps) => {
     <a href={link}>
       <button
         id={id}
-        className={`w-full py-[24px] bg-[#EAECF0] border border-[#EAECF0] rounded-[8px] text-[18px] leading-[28px] text-[#101828] ${
+        className={`hover:bg-[#D0D5DD] w-full py-[24px] bg-[#EAECF0] border border-[#EAECF0] rounded-[8px] text-[18px] leading-[28px] text-[#101828] ${
           fontweight ? "font-semibold" : "font-medium"
         }`}
       >
