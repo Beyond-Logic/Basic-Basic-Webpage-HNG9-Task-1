@@ -7,30 +7,32 @@ import ReactTooltip from "react-tooltip";
 
 const SocialLinks = () => {
   return (
-    <div className="flex justify-center space-x-[36.75px] mb-[136.55px]">
-      <ReactTooltip id="slackProfileTip" place="left" effect="solid">
+    <>
+      <ReactTooltip id="slackProfileTip" place="top" effect="solid">
         edemaero
       </ReactTooltip>
-      <ReactTooltip id="githubProfileTip" place="right" effect="solid">
+      <ReactTooltip id="githubProfileTip" place="top" effect="solid">
         Beyond_Logic
       </ReactTooltip>
-      <img
-        src={SlackIcon}
-        alt="slack"
-        id="slack"
-        data-tip
-        data-for="slackProfileTip"
-      />
-
-      <a href="https://github.com/Beyond-Logic" id="github">
+      <div className="flex justify-center space-x-[36.75px] mb-[136.55px] items-center">
         <img
-          src={GitHubIcon}
-          alt="github"
+          src={SlackIcon}
+          alt="slack"
+          id="slack"
           data-tip
-          data-for="githubProfileTip"
+          data-for="slackProfileTip"
         />
-      </a>
-    </div>
+
+        <a href="https://github.com/Beyond-Logic" id="github">
+          <img
+            src={GitHubIcon}
+            alt="github"
+            data-tip
+            data-for="githubProfileTip"
+          />
+        </a>
+      </div>
+    </>
   );
 };
 
