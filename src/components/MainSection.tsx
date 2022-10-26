@@ -1,6 +1,7 @@
 /** @format */
 
 import React from "react";
+import ReactTooltip from "react-tooltip";
 import { LinkCard, SocialLinks } from "./index";
 
 const Links = [
@@ -20,8 +21,9 @@ const Links = [
     title: "Zuri Books",
     link: "http://books.zuri.team/",
     id: "books",
-    subtext: "This is where you find books about design and coding",
+    subtext: "Books on design and coding",
     fontWeight: true,
+    dataFor: "zuriBooks",
   },
 
   {
@@ -35,7 +37,6 @@ const Links = [
     title: "Background Check for Coders",
     link: "https://background.zuri.team/",
     id: "pitch",
-    subtext: "This is where you find books about design and coding",
     fontWeight: true,
   },
 
@@ -43,7 +44,6 @@ const Links = [
     title: "Design Books",
     link: "https://books.zuri.team/design-rules",
     id: "book__design",
-    subtext: "Don't let little mistakes cost you a chance",
     fontWeight: true,
   },
 ];
@@ -51,16 +51,25 @@ const Links = [
 const MainSection = () => {
   return (
     <div>
-      <div className="flex flex-col space-y-[24px] mt-[56px] mb-[48px]">
+      <div className="flex flex-col space-y-[24px] mt-[56px] mb-[48px] justify-center ">
         {Links &&
           Links.map((item, key) => (
-            <LinkCard
-              key={key}
-              title={item.title}
-              link={item.link}
-              id={item.id}
-              fontweight={item.fontWeight}
-            />
+            <>
+              {item.subtext && (
+                <ReactTooltip id={item.dataFor} place="left" effect="solid">
+                  {item.subtext}
+                </ReactTooltip>
+              )}
+              <LinkCard
+                key={key}
+                title={item.title}
+                link={item.link}
+                id={item.id}
+                fontweight={item.fontWeight}
+                subtext={item.subtext}
+                dataFor={item.dataFor}
+              />
+            </>
           ))}
       </div>
       <SocialLinks />
