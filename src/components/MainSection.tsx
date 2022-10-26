@@ -26,7 +26,7 @@ const Links = [
 
   {
     title: "Python Books",
-    link: `https://books.zuri.team/python-for-beginners?ref_id=edemaero`,
+    link: `https://books.zuri.team/python-for-beginners?ref_id=BeyondLogic`,
     id: "book__python",
     fontWeight: true,
   },
