@@ -19,6 +19,7 @@ const SocialLinks = () => {
             src={SlackIcon}
             alt="slack"
             id="slack"
+            className="cursor-pointer"
             // data-tip
             // data-for="slackProfileTip"
           />
@@ -27,7 +28,11 @@ const SocialLinks = () => {
           </p>
         </div>
 
-        <a href="https://github.com/Beyond-Logic" id="github">
+        <a
+          href="https://github.com/Beyond-Logic"
+          id="github"
+          className="cursor-pointer"
+        >
           <img
             src={GitHubIcon}
             alt="github"
