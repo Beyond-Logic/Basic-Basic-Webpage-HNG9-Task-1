@@ -15,13 +15,16 @@ const SocialLinks = () => {
         Beyond-Logic
       </ReactTooltip>
       <div className="flex justify-center space-x-[36.75px] mb-[136.55px] items-center">
-        <img
-          src={SlackIcon}
-          alt="slack"
-          id="slack"
-          data-tip
-          data-for="slackProfileTip"
-        />
+        <div className="flex justify-center items-center space-x-2">
+          <img
+            src={SlackIcon}
+            alt="slack"
+            id="slack"
+            data-tip
+            data-for="slackProfileTip"
+          />
+          <p className="hidden">BeyondLogic</p>
+        </div>
 
         <a href="https://github.com/Beyond-Logic" id="github">
           <img
