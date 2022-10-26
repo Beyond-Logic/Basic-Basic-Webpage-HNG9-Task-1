@@ -3,25 +3,24 @@
 import React from "react";
 import SlackIcon from "../assets/SlackIcon.svg";
 import GitHubIcon from "../assets/GitHubIcon.svg";
-import ReactTooltip from "react-tooltip";
 
 const SocialLinks = () => {
   return (
     <>
-      <ReactTooltip id="slackProfileTip" place="top" effect="solid">
+      {/* <ReactTooltip id="slackProfileTip" place="top" effect="solid">
         BeyondLogic
       </ReactTooltip>
       <ReactTooltip id="githubProfileTip" place="top" effect="solid">
         Beyond-Logic
-      </ReactTooltip>
+      </ReactTooltip> */}
       <div className="flex justify-center space-x-[36.75px] mb-[136.55px] items-center">
         <div className="flex justify-center items-center space-x-2">
           <img
             src={SlackIcon}
             alt="slack"
             id="slack"
-            data-tip
-            data-for="slackProfileTip"
+            // data-tip
+            // data-for="slackProfileTip"
           />
           <p id="slack" className="hidden">
             BeyondLogic
@@ -32,8 +31,8 @@ const SocialLinks = () => {
           <img
             src={GitHubIcon}
             alt="github"
-            data-tip
-            data-for="githubProfileTip"
+            // data-tip
+            // data-for="githubProfileTip"
           />
         </a>
       </div>
