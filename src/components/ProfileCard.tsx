@@ -36,12 +36,17 @@ const ProfileCard = () => {
             onMouseLeave={() => setShowCamera(false)}
           ></div>
         </div>
-        <h5
-          id="twitter"
-          className="mt-[24px] font-bold md:text-[20px] text-[18px] md:leading-[30px] leading-[28px] text-[#101828] text-center"
-        >
-          BeyondLogic
-        </h5>
+        <div className="flex flex-col justify-center items-center">
+          <h5
+            id="twitter"
+            className="mt-[24px] font-bold md:text-[20px] text-[18px] md:leading-[30px] leading-[28px] text-[#101828] text-center"
+          >
+            BeyondLogic
+          </h5>
+          <h5 id="slack" className="hidden">
+            BeyondLogic
+          </h5>
+        </div>
       </div>
       <div className="absolute right-0 top-0">
         <div
