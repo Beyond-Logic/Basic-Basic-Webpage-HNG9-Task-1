@@ -23,7 +23,9 @@ const SocialLinks = () => {
             data-tip
             data-for="slackProfileTip"
           />
-          <p className="hidden">BeyondLogic</p>
+          <p id="slack" className="hidden">
+            BeyondLogic
+          </p>
         </div>
 
         <a href="https://github.com/Beyond-Logic" id="github">
