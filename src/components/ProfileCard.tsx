@@ -40,7 +40,7 @@ const ProfileCard = () => {
           id="twitter"
           className="mt-[24px] font-bold md:text-[20px] text-[18px] md:leading-[30px] leading-[28px] text-[#101828] text-center"
         >
-          Edema Ero
+          BeyondLogic
         </h5>
       </div>
       <div className="absolute right-0 top-0">
