@@ -1,7 +1,6 @@
 /** @format */
 
 import React from "react";
-import ReactTooltip from "react-tooltip";
 import { LinkCard, SocialLinks } from "./index";
 
 const Links = [
@@ -10,12 +9,14 @@ const Links = [
     link: "https://twitter.com/_beyond_logic",
     id: "twitter",
     fontWeight: false,
+    key: 1,
   },
   {
     title: "Zuri Team",
     link: "https://training.zuri.team/",
     id: "btn__zuri",
     fontWeight: true,
+    key: 2,
   },
   {
     title: "Zuri Books",
@@ -24,6 +25,7 @@ const Links = [
     subtext: "Books on design and coding",
     fontWeight: true,
     dataFor: "zuriBooks",
+    key: 3,
   },
 
   {
@@ -31,6 +33,7 @@ const Links = [
     link: `https://books.zuri.team/python-for-beginners?ref_id=BeyondLogic`,
     id: "book__python",
     fontWeight: true,
+    key: 4,
   },
 
   {
@@ -38,6 +41,7 @@ const Links = [
     link: "https://background.zuri.team/",
     id: "pitch",
     fontWeight: true,
+    key: 5,
   },
 
   {
@@ -45,6 +49,7 @@ const Links = [
     link: "https://books.zuri.team/design-rules",
     id: "book__design",
     fontWeight: true,
+    key: 6,
   },
 ];
 
@@ -54,22 +59,15 @@ const MainSection = () => {
       <div className="flex flex-col space-y-[24px] mt-[56px] mb-[48px] justify-center ">
         {Links &&
           Links.map((item, key) => (
-            <>
-              {item.subtext && (
-                <ReactTooltip id={item.dataFor} place="left" effect="solid">
-                  {item.subtext}
-                </ReactTooltip>
-              )}
-              <LinkCard
-                key={key}
-                title={item.title}
-                link={item.link}
-                id={item.id}
-                fontweight={item.fontWeight}
-                subtext={item.subtext}
-                dataFor={item.dataFor}
-              />
-            </>
+            <LinkCard
+              key={key}
+              title={item.title}
+              link={item.link}
+              id={item.id}
+              fontweight={item.fontWeight}
+              subtext={item.subtext}
+              dataFor={item.dataFor}
+            />
           ))}
       </div>
       <SocialLinks />
