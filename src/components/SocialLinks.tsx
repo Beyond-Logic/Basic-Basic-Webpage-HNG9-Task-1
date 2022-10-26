@@ -9,10 +9,10 @@ const SocialLinks = () => {
   return (
     <>
       <ReactTooltip id="slackProfileTip" place="top" effect="solid">
-        edemaero
+        BeyondLogic
       </ReactTooltip>
       <ReactTooltip id="githubProfileTip" place="top" effect="solid">
-        Beyond_Logic
+        Beyond-Logic
       </ReactTooltip>
       <div className="flex justify-center space-x-[36.75px] mb-[136.55px] items-center">
         <img
